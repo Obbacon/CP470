@@ -1,11 +1,27 @@
 <resources>
     <string name="app_name">AndroidAssignments</string>
     <string name="hello_message">Hello World!</string>
-    <string name="Login_name">Login</string>
+    <string name="login_name">Login</string>
     <string name="ButtonText">I\'m a button</string>
+    <string name="password_text">Password</string>
     <string name="Password">Password</string>
     <string name="LoginHint">Login Name</string>
     <string name="Question">What does this do?</string>
     <string name="RadioButtonText">RadioButton</string>
     <string name="CheckBoxText">CheckBox</string>
+    <string name="dialog_title">Dialog Box</string>
+    <string name="dialog_message">Do you want to quit?</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="camera_error">Error</string>
+    <string name="txtLogin">Login name</string>
+    <string name="lblLogin">Login</string>
+
+    <string name="lblPassword">Password</string>
+    <string name="lblSwitch">What does this do?</string>
+
+
+
+    <string name="dialog_switchOn">Switch is On</string>
+    <string name="dialog_switchOff">Switch is Off</string>
 </resources>

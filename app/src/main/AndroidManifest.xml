@@ -3,8 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.androidassignments">
 
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA"> </uses-permission>
     <application
         android:allowBackup="true"
+        android:usesCleartextTraffic="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -14,13 +18,13 @@
         android:theme="@style/Theme.AndroidAssignments"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".ListItemsActivity"
             android:exported="true" />
         <activity
-            android:name=".ListItemsActivity"
+            android:name=".MainActivity"
             android:exported="true"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
