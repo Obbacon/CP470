@@ -14,14 +14,6 @@
     <string name="ok">Ok</string>
     <string name="cancel">Cancel</string>
     <string name="camera_error">Error</string>
-    <string name="txtLogin">Login name</string>
-    <string name="lblLogin">Login</string>
-
-    <string name="lblPassword">Password</string>
-    <string name="lblSwitch">What does this do?</string>
-
-
-
-    <string name="dialog_switchOn">Switch is On</string>
-    <string name="dialog_switchOff">Switch is Off</string>
+    <string name="btnChat">Start Chat</string>
+    <string name="btnSend">Send</string>
 </resources>
