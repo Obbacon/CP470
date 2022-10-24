@@ -61,6 +61,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void startToolbar(View view) {
+        Log.i(ACTIVITY_NAME, "User clicked Test Toolbar");
+        Intent intent = new Intent(this, TestToolbar.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onResume(){
         super.onResume();

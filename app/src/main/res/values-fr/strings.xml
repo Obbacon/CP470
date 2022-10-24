@@ -17,4 +17,15 @@
     <string name="camera_error">Erreur</string>
     <string name="btnChat">Discuter</string>
     <string name="btnSend">Envoyer</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="setText">Set Text</string>
+    <string name="goBack">Go Back?</string>
+    <string name="beginToolbar">Starting toolbar</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
