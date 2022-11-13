@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.081" />
 
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -26,25 +27,37 @@
         tools:layout_editor_absoluteY="106dp" />
 
     <Button
-        android:id="@+id/btnChat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/btnChat"
-        android:onClick="startChat"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnButton" />
-
-    <Button
         android:id="@+id/btnToolbar"
-        android:layout_width="wrap_content"
+        android:layout_width="79dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/beginToolbar"
         android:onClick="startToolbar"
+        android:text="@string/beginToolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnChat" />
+
+    <Button
+        android:id="@+id/btnChat"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="startChat"
+        android:text="@string/btnChat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/btnWeather"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/button"
+        android:text="@string/weather_txt_btn"
+        app:layout_constraintBottom_toTopOf="@id/btnChat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button" />
 
 </LinearLayout>

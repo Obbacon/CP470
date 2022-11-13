@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected static final String ACTIVITY_NAME = "MainActivity";
     Button btnCam;
     Button btnStartChat;
+    Button StartWeather;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         btnCam = (Button) findViewById(R.id.button);
         btnStartChat = findViewById(R.id.btnChat);
+        StartWeather = findViewById(R.id.btnWeather);
+
         btnCam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Start Chat");
                 Intent intent = new Intent(MainActivity.this, ChatWindow.class);
+                startActivity(intent);
+            }
+        });
+
+        StartWeather.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, WeatherForecast.class);
                 startActivity(intent);
             }
         });
@@ -64,6 +76,12 @@ public class MainActivity extends AppCompatActivity {
     public void startToolbar(View view) {
         Log.i(ACTIVITY_NAME, "User clicked Test Toolbar");
         Intent intent = new Intent(this, TestToolbar.class);
+        startActivity(intent);
+    }
+
+    public void startWeatherForecast(View View){
+        Log.i(ACTIVITY_NAME, "User clicked Weather Forecast");
+        Intent intent = new Intent(this, WeatherForecast.class);
         startActivity(intent);
     }
 
