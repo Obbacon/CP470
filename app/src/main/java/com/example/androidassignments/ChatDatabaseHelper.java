@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 
 public class ChatDatabaseHelper extends SQLiteOpenHelper {
-    public static final String KEY_MESSAGE = "message";
+    public static final String KEY_MESSAGE = "messages";
     public static final String TABLE_NAME = "messagesTable";
     public static final String KEY_ID = "Key_ID";
     public static final int VERSION_NUM = 3;
